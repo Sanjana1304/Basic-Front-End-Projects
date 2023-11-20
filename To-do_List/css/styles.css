@@ -1,0 +1,174 @@
+body {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5em;
+}
+
+h1 {
+  background: #6666e6;
+}
+
+.mainPg {
+  margin: 2.5rem;
+}
+
+.heading {
+  margin-bottom: 0.7rem;
+}
+
+.taskInput {
+  width: 60%;
+  height: 30px;
+}
+
+.priorityRow {
+  margin-top: -1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0em;
+  height: 1.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priorityRow input {
+  height: 2em;
+}
+
+.priorityRow label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  cursor: pointer;
+  height: 1.5em;
+}
+
+.high {
+  background: #942e2e;
+}
+
+.medium {
+  background: #dfa437;
+}
+
+.low {
+  background: #ebeb5c;
+}
+
+.addButton {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 40px;
+  font-size: large;
+  background: #6666e6;
+  cursor: pointer;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.showButton {
+  cursor: pointer;
+  background: pink;
+  font-size: large;
+  margin-top: 0.7rem;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.showButt {
+  width: 20%;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: pink;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+nav .taskNclose {
+  margin-top: 5rem;
+}
+
+nav h1 {
+  font-size: 3em;
+}
+
+nav ul {
+  list-style-image: url(/images/checkboxList.png);
+  margin-top: 2rem;
+}
+
+nav ul .singleList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+nav ul .singleList button {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  size: 6em;
+  background: #9999eb;
+  font-size: large;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+}
+
+nav ul .singleList p {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+nav ul .singleList li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+nav .close {
+  float: right;
+  margin-top: -13rem;
+  width: 2em;
+  cursor: pointer;
+}
+
+.scroll {
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.printButt {
+  float: right;
+}
+
+.printButt button {
+  font-size: large;
+  font-family: 'Fredoka', sans-serif;
+  cursor: pointer;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+/*# sourceMappingURL=styles.css.map */

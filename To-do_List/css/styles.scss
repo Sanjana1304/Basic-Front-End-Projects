@@ -1,0 +1,141 @@
+body {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5em;
+}
+
+h1{
+    background: rgb(102, 102, 230);
+}
+
+.mainPg{
+    margin: 2.5rem;
+}
+
+.heading{
+    margin-bottom: 0.7rem;
+}
+
+.taskInput{
+      width: 60%;
+      height: 30px;
+}
+
+.priorityRow{
+    margin-top: -1.5rem;
+    display: flex;
+    gap: 0em;
+    height: 1.8em;
+    align-items: center;
+    input{
+        height: 2em;
+    }
+    label{
+        flex:1;
+        text-align: center;
+        cursor: pointer;
+        height: 1.5em;
+    }
+}
+
+.high{
+    background: rgb(148, 46, 46);
+}
+.medium{
+    background: rgb(223, 164, 55);
+}
+.low{
+    background: rgb(235, 235, 92);
+}
+
+.addButton{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    background: rgb(102, 102, 230);
+    cursor: pointer;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.showButton{
+    cursor: pointer;
+    background: pink;
+    font-size: large;
+    margin-top: 0.7rem;
+    font-family: 'Fredoka', sans-serif;
+}
+.showButt{
+    width: 20%;
+}
+
+.menu{
+    cursor: pointer;
+    
+}
+
+nav{
+    position: fixed;
+    top:0;
+    right: 0;
+    background: pink;
+    height: 100vh;
+    width: 100%;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+
+    .taskNclose{
+        margin-top: 5rem;
+    }
+    h1{
+        font-size: 3em;
+    }
+    ul{
+        list-style-image: url(/images/checkboxList.png);
+        margin-top: 2rem;
+        .singleList{
+            display: flex;
+            margin-bottom: 1em;
+            button{
+                flex: 0.7;
+                size: 6em;
+                background: rgb(153, 153, 235);
+                font-size: large;
+                font-family: 'Fredoka', sans-serif;
+                cursor: pointer;
+            }
+            p{
+                margin-bottom: 0;
+                margin-top: 0;
+                text-align: center;
+                flex: 1;
+            }
+            li{
+                flex: 1;
+            }
+        }
+    }
+
+    .close{
+        float: right;
+        margin-top: -13rem;
+        width: 2em;
+        cursor: pointer;
+    }
+}
+
+.scroll{
+    height: 700px;
+    overflow-y: scroll;
+}
+.printButt{
+    button{
+        font-size: large;
+        font-family: 'Fredoka', sans-serif;
+        cursor: pointer;
+    }
+    float: right;
+}
+.open-nav{
+    transform: translateX(0%);
+}
