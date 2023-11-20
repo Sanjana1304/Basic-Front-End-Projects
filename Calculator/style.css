@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.parent {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Optional: Make sure the parent container covers the entire viewport height */
+}
+.mycalc{
+    border: 1px solid gray;
+    width: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(16, 21, 30);
+}
+.inputbox{
+    border: 1px solid gray;
+    width: 100%;
+    height: 70px;
+    font-size: 2rem;
+    text-align: right;
+    padding-right: 15px;
+  padding-top: 10px;
+  overflow-x: auto;
+  transition: all .2s ease-in-out;
+}
+.inputbox:hover{
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operators{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.operators div{
+    border: 1px solid gray;
+    padding: 15px;
+    width: calc(15%);
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(214, 212, 212);
+}
+.operators div:hover{
+    box-shadow: 0 4px 8px rgb(70, 75, 85);
+    transition: 0.2s ease-in-out;
+}
+.elements{
+    display: flex;
+    justify-content: space-between;
+}
+.leftpanel{
+    width: calc(75%);
+}
+.numbers{
+    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.numbers div{
+    border: 1px solid gray;
+    padding: 15px;
+    width: calc(19%);
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgb(219, 224, 228);
+
+}
+.numbers div:hover{
+    box-shadow: 0 4px 8px rgb(70, 75, 85);
+    transition: 0.2s ease-in-out;
+}
+.equal{
+    border: 1px solid gray;
+    padding: 15px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    font-size: 2rem;
+    background-color: rgb(105, 152, 239);
+    padding-bottom: 15px;
+    
+}
+.equal:hover{
+    background-color: rgb(65, 127, 242);
+    transition: 0.3s ease-in-out;
+}
+
+
