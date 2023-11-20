@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="appwrap">
+        <header>
+            <input type="text " placeholder="Search for a city" class="searchbox">
+            <button onclick="SetQuery2()">Search</button>
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">Chicago,US</div>
+                <div class="date">Saturday 25 September 2023</div>
+            </section>
+            <div class="current">
+                <div class="temp">15<span>°C</span></div>
+                <div class="weather"><b><i>Clouds</i></b></div>
+                <div class="hilow">12.09°C / 16.16°C</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
